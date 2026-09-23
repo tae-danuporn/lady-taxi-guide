@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>แท็กซี่เชียงใหม่ พาเที่ยวภาคเหนือ | Chiang Mai Taxi & Tours</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="แท็กซี่เชียงใหม่ พาเที่ยวภาคเหนือ — Chiang Mai Taxi & Tours">
+    <meta property="og:description" content="บริการแท็กซี่เชียงใหม่ พาเที่ยวภาคเหนือ ชำนาญเส้นทางกว่า 15 ปี ปลอดภัย อบอุ่น | Chiang Mai Taxi & Northern Thailand Tours — 15+ years of trusted local driving">
+    <meta property="og:image" content="images/og-cover.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Language Toggle (Fixed) -->
+<button id="langToggle" class="lang-toggle" onclick="toggleLang()">
+    <span class="lang-th" style="display:none">EN</span>
+    <span class="lang-en">TH</span>
+</button>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span data-th="Lady Taxi Chiang Mai Available" data-en="Lady Taxi Chiang Mai Available">Lady Taxi</span>
+        </div>
+        <h1>
+            <span class="hero-greeting" data-th="สวัสดีค่ะ" data-en="Sawasdee!">สวัสดีค่ะ</span>
+            <span class="hero-name" data-th="พาเที่ยวเหนือ" data-en="Northern Tours">พาเที่ยวเหนือ</span>
+            <span class="hero-sub" data-th="เชียงใหม่ & ภาคเหนือ" data-en="Chiang Mai & Northern Thailand">เชียงใหม่ & ภาคเหนือ</span>
+        </h1>
+        <p class="hero-desc" data-th="บริการแท็กซี่ส่วนตัวพาเที่ยวภาคเหนือ ประสบการณ์ขับรถมากว่า 15 ปี รู้ทุกเส้นทาง ปลอดภัย ดูแลอบอุ่นเหมือนคนในครอบครัว" data-en="Private taxi tours across Northern Thailand. 15+ years of driving experience, safe & warm like family.">บริการแท็กซี่ส่วนตัวพาเที่ยวภาคเหนือ ประสบการณ์ขับรถมากว่า 15 ปี รู้ทุกเส้นทาง ปลอดภัย ดูแลอบอุ่นเหมือนคนในครอบครัว</p>
+        <a href="#places" class="hero-cta" data-th="ดูสถานที่เที่ยว" data-en="Explore Places">ดูสถานที่เที่ยว</a>
+    </div>
+    <div class="hero-scroll-hint">
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- ==================== TRUST / ABOUT SECTION ==================== -->
+<section class="trust-section" id="about">
+    <div class="container">
+        <div class="trust-card">
+            <div class="trust-photo">
+                <div class="trust-gallery">
+                    <div class="trust-gallery-track">
+                        <div class="trust-slide"><img src="images/profile_person.jpg" alt="Driver profile" loading="lazy"></div>
+                        <div class="trust-slide"><img src="images/profile_car.jpg" alt="Taxi car" loading="lazy"></div>
+                    </div>
+                    <div class="trust-gallery-dots">
+                        <span class="trust-dot active" data-index="0"></span>
+                        <span class="trust-dot" data-index="1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="trust-info">
+                <h2 data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</h2>
+                <div class="trust-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label" data-th="ปีประสบการณ์" data-en="Years Experience">ปีประสบการณ์</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </span>
+                        <span class="stat-label" data-th="ใบอนุญาตขับขี่สาธารณะ" data-en="Licensed Public Driver">ใบอนุญาตขับขี่สาธารณะ</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-th="ทะเบียน: ทข-437" data-en="Plate: ทข-437">ทะเบียน: XX-XXXX</span>
+                        <span class="stat-label" data-th="เชียงใหม่" data-en="Chiang Mai">เชียงใหม่</span>
+                    </div>
+                </div>
+                <p class="trust-desc" data-th="ดิฉันขับแท็กซี่รับส่งผู้โดยสารที่สนามบินเชียงใหม่มากว่า 15 ปี รู้จักเส้นทางทุกซอก ทุกมุม ทั้งในเมืองและต่างอำเภอ ขับปลอดภัย ดูแลลูกค้าเหมือนคนในครอบครัว พร้อมพาเที่ยวทั่วภาคเหนือ ทั้งเชียงใหม่ เชียงราย ปาย น่าน ลำปาง และอีกมากมาย" data-en="I've been driving taxi at Chiang Mai Airport for over 15 years. I know every route — city streets and countryside alike. Safe driving, warm hospitality, and ready to take you anywhere in Northern Thailand: Chiang Mai, Chiang Rai, Pai, Nan, Lampang, and beyond.">ดิฉันขับแท็กซี่รับส่งผู้โดยสารที่สนามบินเชียงใหม่มากว่า 15 ปี รู้จักเส้นทางทุกซอก ทุกมุม ทั้งในเมืองและต่างอำเภอ ขับปลอดภัย ดูแลลูกค้าเหมือนคนในครอบครัว พร้อมพาเที่ยวทั่วภาคเหนือ ทั้งเชียงใหม่ เชียงราย ปาย น่าน ลำปาง และอีกมากมาย</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== INTEREST FILTER TABS ==================== -->
+<section class="filter-section" id="places">
+    <div class="container">
+        <h2 class="section-title" data-th="สถานที่เที่ยวภาคเหนือ" data-en="Northern Thailand Destinations">สถานที่เที่ยวภาคเหนือ</h2>
+        <p class="section-subtitle" data-th="เลือกสไตล์ที่ชอบ แล้วปัดดูสถานที่" data-en="Pick your style, then swipe to explore">เลือกสไตล์ที่ชอบ แล้วปัดดูสถานที่</p>
+        <div class="filter-tabs" id="filterTabs">
+            <button class="filter-tab active" data-filter="all" data-th="ทั้งหมด" data-en="All">ทั้งหมด</button>
+            <button class="filter-tab" data-filter="nature" data-th="รักธรรมชาติ" data-en="Nature Lover">รักธรรมชาติ</button>
+            <button class="filter-tab" data-filter="culture" data-th="สายวัฒนธรรม" data-en="Culture Explorer">สายวัฒนธรรม</button>
+            <button class="filter-tab" data-filter="cafe" data-th="สายคาเฟ่ถ่ายรูป" data-en="Cafe & Photo">สายคาเฟ่ถ่ายรูป</button>
+            <button class="filter-tab" data-filter="adventure" data-th="สายแอดเวนเจอร์" data-en="Adventure">สายแอดเวนเจอร์</button>
+            <button class="filter-tab" data-filter="market" data-th="ตลาด/ช้อปปิ้ง" data-en="Markets & Shopping">ตลาด/ช้อปปิ้ง</button>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PLACES BY PROVINCE ==================== -->
+<div id="placesContainer">
+<!-- Sections will be rendered by JavaScript from places data -->
+</div>
+
+<!-- ==================== FAVORITES SUMMARY (Hidden by default) ==================== -->
+<section class="favorites-section" id="favoritesSection" style="display:none">
+    <div class="container">
+        <h2 class="section-title" data-th="สถานที่ที่คุณสนใจ" data-en="Your Saved Places">สถานที่ที่คุณสนใจ</h2>
+        <div id="favoritesList" class="favorites-list"></div>
+        <div class="favorites-actions">
+            <button class="btn-send-favorites" onclick="sendFavoritesToChat()" data-th="ส่งรายการนี้ทาง WhatsApp" data-en="Send this list via WhatsApp">ส่งรายการนี้ทาง WhatsApp</button>
+            <button class="btn-clear-favorites" onclick="clearFavorites()" data-th="ล้างรายการ" data-en="Clear All">ล้างรายการ</button>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section class="reviews-section" id="reviews">
+    <div class="container">
+        <h2 class="section-title" data-th="ลูกค้าพูดถึงเรา" data-en="What Our Guests Say">ลูกค้าพูดถึงเรา</h2>
+        <div class="reviews-carousel">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-th="ขับรถดีมาก ปลอดภัย ดูแลดี พาไปจุดที่ไม่มีในแผนที่ สวยมาก จะกลับมาใช้บริการอีกแน่นอนค่ะ" data-en="Amazing driver — safe, caring, and took us to hidden spots not on any map. Absolutely coming back!">ขับรถดีมาก ปลอดภัย ดูแลดี พาไปจุดที่ไม่มีในแผนที่ สวยมาก จะกลับมาใช้บริการอีกแน่นอนค่ะ</p>
+                <div class="review-author" data-th="— คุณมิกิ, ญี่ปุ่น" data-en="— Miki, Japan">— คุณมิกิ, ญี่ปุ่น</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-th="ประทับใจมากครับ ใจดี คอยแนะนำร้านอาหารอร่อยๆ ระหว่างทาง ราคายุติธรรม ไม่ต้องกังวลเรื่องอะไรเลย" data-en="Impressed! So kind, recommended great local food stops along the way. Fair pricing, zero worries.">ประทับใจมากครับ ใจดี คอยแนะนำร้านอาหารอร่อยๆ ระหว่างทาง ราคายุติธรรม ไม่ต้องกังวลเรื่องอะไรเลย</p>
+                <div class="review-author" data-th="— คุณเดวิด, อังกฤษ" data-en="— David, UK">— คุณเดวิด, อังกฤษ</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-th="พาครอบครัวไปเที่ยวเชียงราย 2 วัน ดูแลดีมากค่ะ เด็กๆ ก็ชอบ รถสะอาด แอร์เย็น แนะนำเลยค่ะ" data-en="Took our family to Chiang Rai for 2 days. Great care of us — kids loved it! Clean car, good AC. Highly recommended.">พาครอบครัวไปเที่ยวเชียงราย 2 วัน ดูแลดีมากค่ะ เด็กๆ ก็ชอบ รถสะอาด แอร์เย็น แนะนำเลยค่ะ</p>
+                <div class="review-author" data-th="— คุณซาร่า, เยอรมัน" data-en="— Sara, Germany">— คุณซาร่า, เยอรมัน</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text" data-th="บริการดีมาก คนขับใจดี แนะนำร้านอาหารท้องถิ่นอร่อยๆ ด้วย สุดยอดครับ" data-en="Fantastic service! Driver was so kind and recommended amazing local restaurants. Absolutely the best!">Fantastic service! Early morning trip to Doi Inthanon — the sea of mist was incredible. Driver was so kind and recommended amazing local restaurants. Absolutely the best!</p>
+                <div class="review-author" data-th="— คุณบ็อบ, อเมริกา" data-en="— Bob, USA">— Bob, USA</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <h2 class="section-title" data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-th="รับผู้โดยสารได้กี่คน?" data-en="How many passengers can you take?">รับผู้โดยสารได้กี่คน?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-th="รับได้สูงสุด 4 ท่าน (รถเก๋ง) หรือ 6-8 ท่าน (รถตู้ — สามารถจัดหาให้ได้) พร้อมกระเป๋าเดินทาง" data-en="Up to 4 passengers (sedan) or 6-8 passengers (van — can be arranged). Luggage included.">รับได้สูงสุด 4 ท่าน (รถเก๋ง) หรือ 6-8 ท่าน (รถตู้ — สามารถจัดหาให้ได้) พร้อมกระเป๋าเดินทาง</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-th="จ่ายเงินยังไงได้บ้าง?" data-en="What payment methods do you accept?">จ่ายเงินยังไงได้บ้าง?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-th="รับทั้งเงินสด (บาท) โอนผ่านธนาคาร/พร้อมเพย์ และ QR Payment ยังไม่รับบัตรเครดิตโดยตรง" data-en="Cash (Thai Baht), bank transfer / PromptPay, and QR Payment accepted. Credit cards not directly accepted yet.">รับทั้งเงินสด (บาท) โอนผ่านธนาคาร/พร้อมเพย์ และ QR Payment ยังไม่รับบัตรเครดิตโดยตรง</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-th="ต้องจองล่วงหน้ากี่วัน?" data-en="How far in advance should I book?">ต้องจองล่วงหน้ากี่วัน?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-th="แนะนำจองล่วงหน้าอย่างน้อย 1 วัน แต่ถ้าว่างก็รับงานทันทีได้เลยค่ะ ทักแชทมาเช็คได้ตลอด" data-en="At least 1 day in advance is recommended, but same-day bookings are possible if available. Feel free to message anytime to check!">แนะนำจองล่วงหน้าอย่างน้อย 1 วัน แต่ถ้าว่างก็รับงานทันทีได้เลยค่ะ ทักแชทมาเช็คได้ตลอด</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-th="รับ-ส่งสนามบินอย่างเดียวได้ไหม?" data-en="Airport pickup/drop-off only?">รับ-ส่งสนามบินอย่างเดียวได้ไหม?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-th="ได้ค่ะ รับทั้งรับ-ส่งสนามบิน รับ-ส่งในเมือง และพาเที่ยวต่างอำเภอ/ต่างจังหวัดแบบเหมาวัน" data-en="Yes! We offer airport transfers, in-city rides, and full-day tours to other districts or provinces.">ได้ค่ะ รับทั้งรับ-ส่งสนามบิน รับ-ส่งในเมือง และพาเที่ยวต่างอำเภอ/ต่างจังหวัดแบบเหมาวัน</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-th="พูดภาษาอังกฤษได้ไหม?" data-en="Do you speak English?">พูดภาษาอังกฤษได้ไหม?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-th="พูดอังกฤษได้ในระดับสื่อสารค่ะ และใช้แอปแปลภาษาช่วยได้ตลอด ไม่ต้องกังวล" data-en="I can communicate in basic English and always have a translation app ready. No worries!">พูดอังกฤษได้ในระดับสื่อสารค่ะ และใช้แอปแปลภาษาช่วยได้ตลอด ไม่ต้องกังวล</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-share">
+            <span data-th="แชร์ให้เพื่อนร่วมทริป:" data-en="Share with your travel buddy:">แชร์ให้เพื่อนร่วมทริป:</span>
+            <div class="share-buttons">
+                <button onclick="shareWhatsApp()" class="share-btn share-wa" aria-label="Share via WhatsApp">WhatsApp</button>
+                <button onclick="shareGeneric()" class="share-btn share-more" data-th="อื่นๆ" data-en="More" aria-label="Share">อื่นๆ</button>
+            </div>
+        </div>
+        <p class="footer-text" data-th="© 2026 แท็กซี่เชียงใหม่ พาเที่ยวภาคเหนือ" data-en="© 2026 Chiang Mai Taxi & Tours">© 2026 แท็กซี่เชียงใหม่ พาเที่ยวภาคเหนือ</p>
+    </div>
+</footer>
+
+<!-- ==================== FLOATING CONTACT BUTTON ==================== -->
+<div class="fab-container" id="fabContainer">
+    <div class="fab-options" id="fabOptions">
+        <a href="tel:+66811659268" class="fab-option fab-call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span data-th="โทรเลย" data-en="Call Now">โทรเลย</span>
+        </a>
+        <a href="https://wa.me/66811659268" target="_blank" class="fab-option fab-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 6.53A8.46 8.46 0 0012.05 4c-4.69 0-8.5 3.81-8.5 8.5 0 1.5.39 2.97 1.13 4.26L3.5 21l4.38-1.15a8.47 8.47 0 004.06 1.04h.01c4.69 0 8.5-3.81 8.5-8.5a8.45 8.45 0 00-2.98-6.86z"/></svg>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+    <button class="fab-main" id="fabMain" onclick="toggleFab()" aria-label="Contact">
+        <svg class="fab-icon-chat" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <svg class="fab-icon-close" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+</div>
+
+<!-- ==================== IMAGE LIGHTBOX ==================== -->
+<div id="imageLightbox" class="lightbox-overlay" style="display:none">
+    <button class="lightbox-close" onclick="closeLightbox()">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ==================== PLACE DETAIL MODAL ==================== -->
+<div id="placeModal" class="place-modal-overlay" style="display:none">
+    <div class="place-modal-content" id="placeModalContent">
+        <!-- Rendered dynamically by JS -->
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
