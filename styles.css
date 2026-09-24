@@ -413,12 +413,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .popular-card {
     flex-shrink: 0;
-    width: 200px;
+    width: 260px;
     scroll-snap-align: start;
     background: var(--card-bg);
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
