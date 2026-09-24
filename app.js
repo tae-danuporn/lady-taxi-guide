@@ -306,14 +306,58 @@ let currentLang = 'en';
 let activeFilter = 'all';
 let favorites = JSON.parse(localStorage.getItem('momtaxi_favs') || '[]');
 
+// Popular place IDs (ordered)
+const popularIds = ['doi-suthep', 'elephant-nature', 'doi-inthanon', 'kaeng-kued', 'mon-cham', 'white-temple'];
+
 // ========== INIT ==========
 document.addEventListener('DOMContentLoaded', () => {
     applyLang(currentLang);
+    renderPopular();
     renderPlaces();
     updateFavoritesUI();
     initScrollReveal();
     initTrustGallery();
     registerSW();
+});
+
+// ========== POPULAR DESTINATIONS ==========
+function renderPopular() {
+    const container = document.getElementById('popularCarousel');
+    if (!container) return;
+    const lang = currentLang;
+    const places = popularIds.map(id => placesData.find(p => p.id === id)).filter(Boolean);
+
+    container.innerHTML = places.map(place => {
+        const isFav = favorites.includes(place.id);
+        const img = place.images?.[0] || '';
+        return `
+        <div class="popular-card" data-id="${place.id}">
+            <div class="popular-card-img">
+                <img src="${img}" alt="${lang === 'th' ? place.nameTh : place.nameEn}" loading="lazy"
+                     onerror="this.parentElement.innerHTML='<div class=\\'img-placeholder\\'><span>${(lang === 'th' ? place.nameTh : place.nameEn).replace(/'/g, '\\&#39;')}</span></div>'">
+                <div class="popular-rank">${places.indexOf(place) + 1}</div>
+                <button class="place-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${place.id}', this)" aria-label="Save">
+                    <svg viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+            </div>
+            <div class="popular-card-body">
+                <div class="popular-card-name" data-th="${place.nameTh}" data-en="${place.nameEn}">${lang === 'th' ? place.nameTh : place.nameEn}</div>
+                <div class="popular-card-province" data-th="${place.provinceTh}" data-en="${place.provinceEn}">${lang === 'th' ? place.provinceTh : place.provinceEn}</div>
+            </div>
+        </div>
+        `;
+    }).join('');
+
+    applyLang(currentLang);
+}
+
+// Popular card click → open modal
+document.addEventListener('click', e => {
+    const card = e.target.closest('.popular-card');
+    if (!card) return;
+    if (e.target.closest('.place-fav-btn')) return;
+    const placeId = card.dataset.id;
+    if (placeId) openPlaceDetail(placeId);
 });
 
 // ========== RENDER PLACES ==========
@@ -511,6 +555,7 @@ function sendFavoritesToChat() {
 function toggleLang() {
     currentLang = currentLang === 'th' ? 'en' : 'th';
     applyLang(currentLang);
+    renderPopular();
     renderPlaces();
     updateFavoritesUI();
 }

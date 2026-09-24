@@ -391,6 +391,120 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================
+   POPULAR DESTINATIONS
+   ============================================ */
+.popular-section {
+    padding: 50px 0 20px;
+    background: var(--surface);
+}
+
+.popular-carousel {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 20px 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.popular-carousel::-webkit-scrollbar { display: none; }
+
+.popular-card {
+    flex-shrink: 0;
+    width: 200px;
+    scroll-snap-align: start;
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.popular-card:active {
+    transform: scale(0.97);
+}
+
+.popular-card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/2;
+    background: var(--surface-warm);
+    overflow: hidden;
+}
+
+.popular-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-card-img .img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--text-light);
+    opacity: 0.5;
+    background: linear-gradient(135deg, var(--surface-warm) 0%, #e8e3d9 100%);
+}
+
+.popular-rank {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(232,152,94,0.4);
+}
+
+.popular-card .place-fav-btn {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.popular-card .place-fav-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.popular-card-body {
+    padding: 12px 14px;
+}
+
+.popular-card-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.3;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popular-card-province {
+    font-size: 11px;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+/* ============================================
    FILTER SECTION
    ============================================ */
 .filter-section {
