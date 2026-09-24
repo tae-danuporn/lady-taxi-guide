@@ -413,7 +413,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .popular-card {
     flex-shrink: 0;
-    width: 260px;
+    width: 350px;
     scroll-snap-align: start;
     background: var(--card-bg);
     border-radius: var(--radius-md);
