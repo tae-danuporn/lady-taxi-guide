@@ -418,7 +418,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     background: var(--card-bg);
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
